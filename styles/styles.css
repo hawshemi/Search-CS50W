@@ -1,0 +1,142 @@
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+}
+
+nav > ul > li {
+    margin: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.center {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    text-align: center;
+}
+
+.container {
+    width: 700px;
+    margin: 60px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.col {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: 300px auto;
+}
+
+.col > input[type=text] {
+    height: 20px;
+    border-radius: 4px;
+}
+
+.col > input[type=text]:hover {
+    box-shadow: none;
+}
+
+.col > input[type=text]:focus {
+    outline: 1px solid lightblue;
+}
+
+h1, h2, h3 {
+    font-family: sans-serif;
+}
+
+header h1 {
+    font-size: 70px;
+    padding: 10px;
+    margin: 10px;
+}
+
+input[type=text] {
+    width: 85%;
+    height: 30px;
+    border: 1px solid lightgray;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+input[type=text]:hover {
+    border: 1px solid #4889F0;
+
+    box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.26);
+}
+
+.btnGray {
+    background-color: #F2F2F2;
+}
+
+.btnGray:hover {
+    background-color: #DCDCDC;
+}
+
+.btnBlue {
+    background-color: #4889F0;
+    font-weight: bold;
+    border: 2px solid #3079ED;
+    color: #fff;
+}
+
+.btnBlue:hover {
+    background-color: #3778F0;
+}
+
+input[type=submit] {
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+    .center {
+        width: 70%;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+}
