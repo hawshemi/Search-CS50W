@@ -18,12 +18,12 @@ nav > ul > li {
     margin: 21px;
 }
 
-nav a {
+nav a , .footer a {
     text-decoration: none;
     color: black;
 }
 
-nav a:hover {
+nav a:hover , .footer a:hover {
     border-bottom: 1px solid black;
     cursor: pointer;
 }
@@ -123,6 +123,17 @@ input[type=submit] {
 input[type=submit]:hover {
     cursor: pointer;
 }
+
+.footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+
 
 @media screen and (max-width: 600px) {
     .center {
