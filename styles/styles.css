@@ -15,7 +15,7 @@ nav > ul {
 }
 
 nav > ul > li {
-    margin: 5px;
+    margin: 21px;
 }
 
 nav a {
@@ -30,7 +30,7 @@ nav a:hover {
 
 .center {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40%;
@@ -38,17 +38,14 @@ nav a:hover {
 }
 
 .container {
-    width: 700px;
-    margin: 60px;
+    width: 800px;
+    margin-top: 100px;
+    margin-left: 200px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-}
-
-.w-100 {
-    width: 100%;
 }
 
 .col {
@@ -63,16 +60,8 @@ nav a:hover {
     border-radius: 4px;
 }
 
-.col > input[type=text]:hover {
-    box-shadow: none;
-}
-
 .col > input[type=text]:focus {
-    outline: 1px solid lightblue;
-}
-
-h1, h2, h3 {
-    font-family: sans-serif;
+    outline: 1px solid #4285f4;
 }
 
 header h1 {
@@ -84,7 +73,7 @@ header h1 {
 input[type=text] {
     width: 85%;
     height: 30px;
-    border: 1px solid lightgray;
+    border: 1px solid silver;
     padding: 10px 20px 10px 20px;
     font-size: 16px;
     border-radius: 20px;
@@ -95,41 +84,45 @@ input[type=text]:focus {
 }
 
 input[type=text]:hover {
-    border: 1px solid #4889F0;
-
-    box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.26);
+    border: 1px solid #4285f4;
+    box-shadow: 0px 0px 10px silver;
 }
 
 .btnGray {
-    background-color: #F2F2F2;
+    background-color: silver;
+    box-shadow: 0px 0px 10px silver;
 }
 
 .btnGray:hover {
-    background-color: #DCDCDC;
+    background-color: gray;
 }
 
 .btnBlue {
-    background-color: #4889F0;
+    background-color: #4285f4;
     font-weight: bold;
-    border: 2px solid #3079ED;
-    color: #fff;
+    color: white;
+    width: 20%;
+    margin: 200px;
+    box-shadow: 0px 0px 10px #4285f4;
 }
 
 .btnBlue:hover {
-    background-color: #3778F0;
+    background-color: #7aa9f7;
 }
 
+h1, h2 {
+    text-shadow: 0px 0px 10px gray;
+}
 input[type=submit] {
     border: none;
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 input[type=submit]:hover {
     cursor: pointer;
 }
-
 
 @media screen and (max-width: 600px) {
     .center {
